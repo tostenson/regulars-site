@@ -206,15 +206,9 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 .brand__mark {
   width: 28px;
   height: 28px;
-  border-radius: 4px;
-  background: radial-gradient(circle at 50% 50%, var(--accent-glow) 0%, var(--accent-glow-warm) 55%, #1F1F2E 100%);
-  display: grid;
-  place-items: center;
-  color: #fff;
-  font-weight: 900;
-  font-size: 18px;
-  font-family: var(--font-display);
-  text-shadow: 0 0 6px rgba(224,128,40,0.8);
+  border-radius: 5px;
+  object-fit: cover;
+  display: block;
   flex-shrink: 0;
 }
 .nav {
@@ -241,6 +235,10 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 }
 .nav__cta {
   margin-left: 8px;
+}
+.nav a.nav__cta,
+.nav a.nav__cta:hover {
+  color: #14151F;
 }
 
 /* ---------- Buttons --------------------------------------------------- */
