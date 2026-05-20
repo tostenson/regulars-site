@@ -1045,6 +1045,52 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   border-radius: var(--radius);
 }
 
+/* brand: colors & fonts */
+.brand-subhead {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 18px;
+  color: var(--accent-glow);
+  margin: 0 0 14px;
+}
+.font-samples {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+@media (max-width: 700px) { .font-samples { grid-template-columns: 1fr; } }
+.font-sample {
+  background: var(--panel-bg);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  padding: 20px;
+}
+.font-sample__name {
+  font-family: var(--font-display);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 12px;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+.font-sample__demo { color: var(--text-primary); margin: 6px 0; }
+.swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 12px;
+  margin-top: 16px;
+}
+.swatch {
+  background: var(--panel-bg);
+  border: 1px solid rgba(255,255,255,0.05);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.swatch__chip { display: block; height: 60px; border-bottom: 1px solid rgba(255,255,255,0.06); }
+.swatch__hex { display: block; font-family: ui-monospace, monospace; font-size: 13px; color: var(--text-primary); padding: 8px 10px 2px; }
+.swatch__label { display: block; font-size: 11px; color: var(--text-muted); padding: 0 10px 10px; text-transform: uppercase; letter-spacing: 0.1em; }
+
 /* Print-friendly press */
 @media print {
   .site-header, .site-footer, .press-toc, .lightbox, .nav-toggle { display: none !important; }
