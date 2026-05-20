@@ -494,6 +494,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
 }
 .media__trailer iframe,
 .media__trailer img,
+.media__trailer video,
 .media__trailer .placeholder {
   position: absolute;
   inset: 0;
@@ -501,6 +502,7 @@ button { font: inherit; cursor: pointer; border: 0; background: none; color: inh
   height: 100%;
   border: 0;
 }
+.media__trailer video { object-fit: contain; background: #000; }
 .media__trailer .placeholder {
   display: grid;
   place-items: center;
